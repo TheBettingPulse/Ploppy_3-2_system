@@ -2,12 +2,13 @@ import random
 
 start: int = 1000
 target: int = 1350
-bet_size: int = 250
 simulations: int = 1000000
 saldo: int = start
 
 column_bet_size: int = 100
 color_bet_size: int = 150
+
+bet_size: int = column_bet_size + color_bet_size
 
 wins: int = 0
 losses: int = 0
