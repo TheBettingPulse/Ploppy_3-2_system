@@ -22,7 +22,7 @@ third_column: int = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36]
 
 for i in range(simulations):
     while (saldo >= bet_size) and (saldo < target):
-        # Get random number between 0-37.
+        # Get random number between 0-36.
         number = random.randint(0,36)
 
         # Check if column bet wins.
@@ -43,7 +43,7 @@ for i in range(simulations):
     else:
         losses += 1
 
-    # Reset start capital.
+    # Reset to start capital.
     saldo = start
 
 
