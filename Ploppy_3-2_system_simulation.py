@@ -31,7 +31,7 @@ for i in range(simulations):
         else:
             saldo -= column_bet_size
 
-        # Check if black bet wins.
+        # Check if color bet wins.
         if number in black_numbers:
             saldo += color_bet_size
         else:
