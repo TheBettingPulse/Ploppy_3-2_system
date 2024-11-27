@@ -6,6 +6,9 @@ bet_size: int = 250
 simulations: int = 1000000
 saldo: int = start
 
+column_bet_size: int = 100
+color_bet_size: int = 150
+
 wins: int = 0
 losses: int = 0
 
@@ -23,15 +26,15 @@ for i in range(simulations):
 
         # Check if column bet wins.
         if number in third_column:
-            saldo += 200
+            saldo += (column_bet_size*2)
         else:
-            saldo -= 100
+            saldo -= column_bet_size
 
         # Check if black bet wins.
         if number in black_numbers:
-            saldo += 150
+            saldo += color_bet_size
         else:
-            saldo -= 150
+            saldo -= color_bet_size
 
     # Check if target goal reached.
     if saldo >= target:
